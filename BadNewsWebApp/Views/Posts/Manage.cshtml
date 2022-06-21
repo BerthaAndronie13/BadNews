@@ -1,0 +1,55 @@
+﻿@model IEnumerable<BadNews.Models.Post>
+
+@{
+    ViewData["Title"] = "Posts";
+}
+
+<h1>Manage Posts</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+    <form asp-action="Manage" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Search: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Manage">Back to Full List</a>
+        </p>
+    </div>
+    </form>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <p>Title</p>
+            </th>
+            <th>
+                <p>Date</p>
+            </th>
+            <th>
+                <p>Category</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PostId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PostId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PostId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
