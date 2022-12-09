@@ -8396,11 +8396,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BadNewsWebApp\\BadNewsWebApp\\BadNewsWebApp\\BadNewsWebApp.csproj",
+      "projectUniqueName": "D:\\BadNewsWebApp\\BadNews\\BadNewsWebApp\\BadNewsWebApp.csproj",
       "projectName": "BadNewsWebApp",
-      "projectPath": "D:\\BadNewsWebApp\\BadNewsWebApp\\BadNewsWebApp\\BadNewsWebApp.csproj",
+      "projectPath": "D:\\BadNewsWebApp\\BadNews\\BadNewsWebApp\\BadNewsWebApp.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\BadNewsWebApp\\BadNewsWebApp\\BadNewsWebApp\\obj\\",
+      "outputPath": "D:\\BadNewsWebApp\\BadNews\\BadNewsWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
